@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link to CSS file (Stylesheet)-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--Link to google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!--Link to fontawesome to get logo's-->
+    <script src="https://kit.fontawesome.com/c9826d01a3.js" crossorigin="anonymous"></script>
+
+    <!--Tab title-->
+    <title>Contact</title>
+</head>
+
+<body>
+    <!--Start Header / Navbar section -->
+    <header>
+        <div class="logo">Zon en Zekerheid</div>
+        <nav class="nav-header">
+            <button class="button-nav">BOEKEN</button>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--End Header / Navbar section -->
+
+    <!--Start the main content / contains only the contact card-->
+    <main>
+        <div class="contact">
+            <form class="contact-card">
+                <h2>Contact</h2>
+
+                <div>
+                    <label for="name">Naam</label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div>
+                    <label for="phone">Telefoonnummer</label>
+                    <input type="tel" name="phone" id="phone" pattern="\d*" title="Graag alleen cijfers invoeren">
+                </div>
+
+                <div>
+                    <label for="vraag">Vraag / Opmerking</label>
+                    <textarea name="vraag" id="vraag"></textarea>
+                </div>
+
+                <input type="submit" value="Verzend">
+            </form>
+        </div>
+    </main>
+    <!--End the main content / contains only the contact card-->
+
+    <!--Start the footer of the Contact Page-->
+    <footer class="cfooter">
+        <!--Creating main division of the footer -->
+        <div class="container">
+
+            <!--Creating row division to style three rows -->
+            <div class="row">
+
+                <!--First col-->
+                <div class="footer-col">
+                    <h4>Klantenservice</h4>
+                    <p>+31 666 333 111</p>
+                    <p>24/7 Beschikbaar</p>
+                </div>
+
+                <!--Second col-->
+                <div class="footer-col">
+                    <h4>ZIE HIERONDER</h4>
+                    <ul>
+                        <li><a href="#">Over ons</a></li>
+                        <li><a href="#">Jouw account</a></li>
+                        <li><a href="#">Werken bij</a></li>
+                    </ul>
+                </div>
+
+                <!--Third col-->
+                <div class="footer-col">
+                    <h4>VOLG ONS</h4>
+                    <!--Icons from fontawesome-->
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 Zon en Zekerheid. All rights reserved.</p>
+        </div>
+    </footer>
+    <!--End the footer of the Contact Page-->
+
+
+</body>
+
+</html>

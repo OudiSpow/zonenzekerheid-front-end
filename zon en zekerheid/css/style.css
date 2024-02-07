@@ -1,0 +1,466 @@
+/* Reset default styles for all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the font family for the webpage */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styles for the header*/
+/*Flexbox display to make flexible layout */
+header {
+    display: flex;
+    justify-content: space-between; /* Distribute items along the main axis with space between them */
+    align-items: center; /* Center items along the cross axis */
+    padding: 15px;
+    background: whitesmoke;
+    color: black;
+}
+
+/* Logo styles */
+.logo {
+    margin: 0;
+    font-family: 'Dancing Script';
+    font-size: 200%;
+}
+
+/* Styles for navbar */
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Styles for the button in the navbar */
+/* 1em = current font size */
+.nav-header .button-nav {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    transition: background-color 0.4s ease; /* Smooth background color transition on hover - ease: slow start, then fast, then end slowly*/
+}
+
+/* Button hover effect */
+.nav-header button:hover {
+    background-color: #2ecc71;
+}
+
+/* Styles for the links in the navbar*/
+.nav-header ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+/* list style in the navbar*/
+.nav-header ul li {
+    list-style-position: inside;
+}
+
+/* Styles for the links in the navbar*/
+.nav-header ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 5px;
+    width: 100px;
+    transition: background-color 0.4s ease;
+}
+
+/* Links hover effect */
+.nav-header ul li a:hover{
+    background-color: #3498db;
+}
+
+/* Styles for the first section */
+.firts-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1-first,
+.h2-first,
+.p-first {
+    margin: 40px; /* Provide spacing around the elements */
+}
+
+.h1-first {
+    font-weight: 600;
+}
+
+.h2-first {
+    font-weight: 400;
+}
+
+.p-first {
+    font-weight: 500;
+}
+
+/* Styles for the second section */
+.second-section {
+    position: relative;
+    overflow: hidden; /* Hide any content that overflows the box in the second section */
+}
+
+/* Video styling in the second section */
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /*The video covers the entire container*/
+}
+
+/* Text overlay text in the second section */
+.text-second {
+    position: absolute; /* Position the element relative to its closest positioned ancestor */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the element both vertically and horizontally */
+    color: #eef1f1cc;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-second .h2-second,
+.text-second .p-second {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.text-second .p-second:last-child {
+    margin-bottom: 0;
+}
+
+/* Styles for the third section */
+.third-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+/* Styles for the image container in the third section */
+.img-third-section{
+    flex-basis: 45%;
+}
+
+/* Styles for the image in the third section */
+.img-third-section img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the texts in the third section */
+.text-first, .text-third {
+    flex-basis: 45%;
+}
+
+.p-third {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+/* Styles for card container/section*/
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*Styles for card the pricing cards */
+.pricing-card {
+    flex-basis: 35%;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 2em;
+    padding: 1em;
+}
+
+/*Styles for the header in the pricing cards */
+.card-header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px;
+    font-weight: 700;
+}
+
+/*Styles for the image in the pricing cards */
+.pricing-card img {
+    width: 100%;
+    height: auto;
+}
+
+/*Styles for the footer in the pricing cards */
+.card-footer {
+    padding: 20px;
+}
+
+/*Styles for the paragraph with class ".price" in the footer / pricing cards */
+.price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2ecc71;
+    background-color: #e2e2e2;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 1em;
+}
+
+/*Styles for the button in the footer / pricing cards */
+.btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.4s ease;
+    margin-top: 1em;
+}
+
+.btn:hover {
+    background-color: #2ecc71;
+}
+
+/*Styles for the footer of the webpage*/
+.footer {
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+/* Styles for paragraphs within the footer section */
+.footer p{
+    margin: 0;
+    padding: 0 40px;
+}
+
+
+
+
+/*Start styling for the blog page*/
+.main-blog{
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.images img {
+    max-width: 50%;
+    height: auto;
+}
+
+
+.blog-part{
+    padding: 20px;
+}
+
+.blog-list ol{
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+/*End styling for the blog page*/
+
+
+
+/*Start styling for the contact page*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.contact {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 400px;
+    padding: 20px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact h2 {
+    color: #333;
+    text-align: center;
+}
+
+.contact-card div {
+    margin-bottom: 15px;
+}
+
+label {
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+/*End styling for the contact page*/
+
+
+/*Start styling for the footer / contact page*/
+.cfooter{
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+/* Styles for a row element */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Display as flex and wrap content within a row */
+}
+
+/* Styles for columns within the footer */
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+/* Styles for h4 elements within footer columns */
+.footer-col h4{
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+/* Styles for paragraphs within footer columns */
+.footer-col p {
+    color: black;
+}
+
+/* Styles for links within unordered lists in footer columns */
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: all 0.3s ease;
+    padding-bottom: 5px;
+}
+
+/* Hover effect for links within unordered lists in footer columns */
+.footer-col ul li a:hover{
+    color: blue;
+    padding-left: 8px;
+}
+
+/* Styles for social links */
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.social-links li {
+    margin-right: 10px;
+}
+
+.social-links a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*End styling for the footer / contact page*/
+
+
+/* Start Media query for screens up to 768px */
+@media screen and (max-width: 768px) {
+    /* Adjustments for the header */
+    .nav-header .button-nav,
+    .nav-header ul li a {
+        padding: 10px 15px; 
+    }
+
+    /* Adjustments for the first section */
+    .firts-section {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .text-first,
+    .img-firts-section {
+        flex-basis: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    /* Adjustments for the third section */
+    .third-section {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 20px; 
+    }
+
+    /* Adjustments for the pricing section */
+    .pricing-card {
+        flex-basis: 100%; 
+        margin: 1em 0; 
+    }
+
+    /* Adjustments for the footer */
+    .footer {
+        flex-direction: column; 
+        padding: 20px; 
+    }
+
+    /* Adjustments for the footer columns */
+    .footer-col {
+        width: 100%; 
+        margin-bottom: 20px; 
+        text-align: center; 
+    }
+}
+/* End Media query for screens up to 768px */
